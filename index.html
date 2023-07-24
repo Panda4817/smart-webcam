@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protect my plants - Smart Webcam</title>
+    <meta charset="utf-8">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>  
+  <body>
+    <h1>🌱 Protect my plants - Smart Webcam</h1>
+
+    <p>Get alerted when a cat 🐈, dog 🐕 or bird 🐦‍⬛ appears in your garden! 🌳</p>
+    <p>To turn it on, wait for the Tensorflow.js model to load before clicking the button to enable the webcam - at which point it will become visible to use.</p>
+    <section id="demos" class="invisible">
+
+      <p>To test it out, hold up some pictures of cats, dogs or birds, close to your webcam to get a real-time classification! 
+        When ready click "Enable Webcam" below and accept access to the webcam when the browser asks.</p>
+      
+      <div id="liveView" class="camView">
+        <button id="webcamButton">Enable Webcam</button>
+        <video id="webcam" autoplay muted width="640" height="480"></video>
+      </div>
+      <h2 id="alert"></h2>
+    </section>
+
+    <footer>
+        <p>Machine learning COCO-SSD object detection model from Tensorflow.js</p>
+        <p>Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=6387">Pixabay</a></p>
+    </footer>
+
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    <!-- Load the coco-ssd model to use to recognize things in images -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    
+    <!-- Import the page's JavaScript to do some stuff -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
