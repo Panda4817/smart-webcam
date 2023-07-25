@@ -18,18 +18,16 @@
     <p>Get alerted when cats 🐈 or birds 🐦 appear in your garden! 🌳</p>
     <p>To turn it on, wait for the Tensorflow.js model to load before clicking the button to enable the webcam - at
         which point it will become visible to use.</p>
+    <p>To test it out, hold up some pictures of cats or birds, close to your webcam to get a real-time
+        classification!
+        When ready click "Enable Webcam" below and accept access to the webcam when the browser asks.</p>
+    <p id="portraitMode"></p>
     <section id="demos" class="invisible">
-
-        <p>To test it out, hold up some pictures of cats or birds, close to your webcam to get a real-time
-            classification!
-            When ready click "Enable Webcam" below and accept access to the webcam when the browser asks.</p>
-
         <div id="liveView" class="camView">
             <button id="webcamButton">Enable Webcam</button>
             <video id="webcam" autoplay muted width="640" height="480"></video>
         </div>
         <h2 id="alert"></h2>
-        <p id="portraitMode"></p>
     </section>
 
     <footer>

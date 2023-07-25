@@ -121,8 +121,8 @@ function predictWebcam() {
         // Now lets loop through predictions and draw them to the live view if
         // they have a high confidence score.
         for (let n = 0; n < predictions.length; n++) {
-            // If we are over 70% sure we are sure we classified it right, draw it!
-            if (predictions[n].score > 0.7) {
+            // If we are over 60% sure we are sure we classified it right, draw it!
+            if (predictions[n].score > 0.6) {
                 const objectName = predictions[n].class;
                 const p = document.createElement('p');
                 p.innerText = objectName + ' - with '
