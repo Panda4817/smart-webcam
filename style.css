@@ -2,39 +2,49 @@ body {
     font-family: helvetica, arial, sans-serif;
     margin: 2em;
     color: #3D3D3D;
-  }
-  
-  h1 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+h1 {
     font-style: italic;
     color: #3bab59;
-  }
-  
-  video {
+    text-align: center;
+}
+
+video {
     display: block;
-  }
-  
-  section {
+}
+
+section {
     opacity: 1;
     transition: opacity 500ms ease-in-out;
-  }
+    text-align: center;
+}
 
-  .removed {
+.removed {
     display: none;
-  }
-  
-  .invisible {
+}
+
+.invisible {
     opacity: 0.2;
-  }
-  
-  .camView {
+}
+
+.camView {
     position: relative;
     float: left;
     width: calc(100% - 20px);
     margin: 10px;
     cursor: pointer;
-  }
-  
-  .camView p {
+}
+
+.camView p {
     position: absolute;
     padding: 5px;
     background-color: rgba(255, 111, 0, 0.85);
@@ -42,11 +52,28 @@ body {
     border: 1px dashed rgba(255, 255, 255, 0.7);
     z-index: 2;
     font-size: 12px;
-  }
-  
-  .highlighter {
+}
+
+.highlighter {
     background: rgba(0, 255, 0, 0.25);
     border: 1px dashed #fff;
     z-index: 1;
     position: absolute;
-  }
+}
+
+
+
+
+button {
+    background-color: #3bab59;
+    color: #FFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 50px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #168a35;
+}
